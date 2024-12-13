@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Event Booking Form</h2>
+        <form action="confirm.html">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <p id="show" style="color:red;"></p>
+            
+
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Booking Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+
+            <label for="foodChoice">Food Preference:</label>
+            <select id="foodChoice" name="foodChoice" required>
+                <option >Select Food Type From Here....</option>
+                <option value="veg">Vegetarian</option>
+                <option value="nonVeg">Non-Vegetarian</option>
+                <option value="both">Both</option>
+            </select>
+
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" id="rooms" name="rooms" required>
+
+            <label for="halls">Number of Halls:</label>
+            <input type="number" id="halls" name="halls" required>
+
+            <label for="decoration">Decoration Preference:</label>
+            <select id="decoration" name="decoration" required>
+                <option>Select Preference Here....</option>
+                <option value="simple">Simple</option>
+                <option value="luxury">Luxury</option>
+                <option value="custom">Custom</option>
+            </select>
+
+            <button type="button"><a href="confirm.html">Proceed to Payment - 1,000,000 rs.</a></button>
+        </form>
+    </div>
+</body>
+</html>
